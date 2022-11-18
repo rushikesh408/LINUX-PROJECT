@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Password Strength </title>
+      <link rel="stylesheet" href="text.css">
+
+      <link href="https://fonts.googleapis.com/css?family=Muli:400,600&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+<script  src="readFile.js"></script>
+   </head>
+   <body>
+      <div class="container  alert alert-primary ">         
+         <div class="content">
+            <header>Password Strength Checker <br></header>
+            <div class="content__inner">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+         <form action="#">
+            <div class="field">
+               <input onkeyup="trigger()" type="password" value=""  id="pass">
+               <span class="showBtn">SHOW</span>
+            </div>
+            <div class="indicator">
+               <span class="weak"></span>
+               <span class="medium"></span>
+               <span class="strong"></span>
+            </div>
+            <input  type="button" value="check" onclick="save_File()" class="btn btn-success mt-2">            
+            <div class="text"></div>            
+         </form>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
+<script  src="function.js"></script>
+<script  src="save.js"></script>
+      </div>      
+   </body>  
+</html>
